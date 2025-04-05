@@ -1,0 +1,123 @@
+/* Base styles */
+body {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f8f9fa;
+    color: #333;
+}
+
+h1, p {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Task table */
+.task-table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    border: none;
+    padding: 12px 16px;
+}
+
+th {
+    background-color: #4a90e2;
+    color: white;
+    text-align: left;
+    font-weight: 600;
+}
+
+td {
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+tr:hover td {
+    background-color: #f1f1f1;
+}
+
+/* Button styles (add/edit/delete if any) */
+button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+/* Optional: add some spacing */
+h1, h2 {
+    color: #4a4a4a;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Form styling */
+.task-form {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.task-form input[type="text"] {
+    flex: 1;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.task-form input[type="text"]:focus {
+    border-color: #4a90e2;
+}
+
+/* Link buttons */
+.btn-link {
+    display: inline-block;
+    margin: 5px 0;
+    color: #4a90e2;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.btn-link:hover {
+    color: #1e63b1;
+}
+
+.btn-link.delete {
+    color: #e74c3c;
+}
+
+.btn-link.delete:hover {
+    color: #c0392b;
+}
+
+.btn-link.update {
+    color: #27ae60;
+}
+
+.btn-link.update:hover {
+    color: #1e8449;
+}
